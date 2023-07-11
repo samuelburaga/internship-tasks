@@ -1,10 +1,8 @@
 <h1 align = "center"> INTERNSHIP TASKS </h1>
 This repository is used to solve the tasks assigned to me during the internship program "BearingPoint - ULBS 2023".
 
-## Task 1
+> ## Task 1
 
-All the details about the task nr. 1 are specified in the "task-1.png" image located in the "task-1" directory.
+All the details about the task nr. 1 are specified in the "task-1.png" image located in the "task-1" directory. Here is an example:
 
-> ## Example
-
-<video src="test.mp4" controls title="Title"></video>
+<video src="task-1/test.mp4" controls title="Title"></video>
