@@ -1,4 +1,5 @@
 function computeSizeOnDisk(clusterSize, fileSize) {
   let fileSizeOnDisk;
-  return fileSizeOndisk;
+  fileSizeOnDisk = Math.ceil(fileSize / clusterSize) * clusterSize;
+  return fileSizeOnDisk;
 }
