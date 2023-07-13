@@ -11,7 +11,7 @@ class Monster implements Entity {
   attack(target: Entity): void {
     target.health = target.health - this.strength * 10;
   }
-  takeDamage(amount: number) {
+  takeDamage(amount: number): void {
     this.health = this.health - amount;
   }
 }
