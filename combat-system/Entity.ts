@@ -1,4 +1,5 @@
-interface Entity {
+import { EntityType } from "./EntityType";
+export interface Entity {
   name: string;
   health: number;
   strength: number;
@@ -6,3 +7,4 @@ interface Entity {
   attack(target: Entity): void;
   takeDamage(amount: number): void;
 }
+export { EntityType };

@@ -1,4 +1,6 @@
-class Battle {
+import { Hero } from "./hero";
+import { Monster } from "./monster";
+export class Battle {
   player1: Hero | Monster;
   player2: Hero | Monster;
   constructor(player1: Hero | Monster, player2: Hero | Monster) {
@@ -18,3 +20,4 @@ class Battle {
     return this.player2;
   }
 }
+export { Hero, Monster };
