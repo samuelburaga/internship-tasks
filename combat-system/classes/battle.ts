@@ -1,6 +1,6 @@
 import { Hero } from "./hero";
 import { Monster } from "./monster";
-import * as e from "./Entity";
+import * as e from "../interfaces/entity";
 export { Hero, Monster };
 
 export class Battle<T extends e.Entity, U extends e.Entity> {

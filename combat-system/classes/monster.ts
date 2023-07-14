@@ -1,4 +1,4 @@
-import * as e from "./Entity";
+import * as e from "../interfaces/entity";
 
 export class Monster implements e.Entity {
   constructor(

@@ -1,4 +1,4 @@
-import * as e from "./Entity";
+import * as e from "../interfaces/entity";
 
 export class Hero implements e.Entity {
   constructor(

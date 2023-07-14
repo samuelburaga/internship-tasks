@@ -1,4 +1,4 @@
-import { EntityType } from "./EntityType";
+import { EntityType } from "../enums/entity-type";
 export { EntityType };
 
 export interface Entity {
