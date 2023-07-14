@@ -3,7 +3,7 @@ class Monster implements Entity {
     public name: string,
     public health: number,
     public strength: number,
-    public type: EntityType
+    public type: EntityType.MONSTER
   ) {
     this.name = name;
     this.health = health;
@@ -11,7 +11,7 @@ class Monster implements Entity {
     this.type = type;
   }
   attack(target: Entity): void {
-    target.health = target.health - this.strength * 10;
+    target.takeDamage(this.strength * 10);
   }
   takeDamage(amount: number): void {
     this.health = this.health - amount;
