@@ -14,7 +14,7 @@ export class Monster implements e.Entity {
   }
 
   attack(target: e.Entity): void {
-    target.takeDamage(this.strength * 10);
+    target.takeDamage(this.strength * 2);
   }
 
   takeDamage(amount: number): void {

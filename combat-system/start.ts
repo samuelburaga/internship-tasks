@@ -7,4 +7,4 @@ let monster = new b.Monster("Thanos", 200, 15, EntityType.MONSTER);
 let battle = new b.Battle(hero, monster);
 let winner = battle.fight();
 
-console.log(winner.name);
+console.log("\t" + winner.name + " won!");
