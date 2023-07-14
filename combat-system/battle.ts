@@ -6,6 +6,7 @@ export { Hero, Monster };
 export class Battle<T extends e.Entity, U extends e.Entity> {
   player1: T;
   player2: U;
+
   constructor(player1: T, player2: U) {
     this.player1 = player1;
     this.player2 = player2;
