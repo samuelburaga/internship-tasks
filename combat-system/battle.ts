@@ -1,6 +1,7 @@
 import { Hero } from "./hero";
 import { Monster } from "./monster";
 import * as e from "./Entity";
+export { Hero, Monster };
 
 export class Battle<T extends e.Entity, U extends e.Entity> {
   player1: T;
@@ -23,5 +24,3 @@ export class Battle<T extends e.Entity, U extends e.Entity> {
     return this.player2;
   }
 }
-
-export { Hero, Monster };
