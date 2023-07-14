@@ -1,12 +1,15 @@
 import { Hero } from "./hero";
 import { Monster } from "./monster";
-export class Battle {
-  player1: Hero | Monster;
-  player2: Hero | Monster;
-  constructor(player1: Hero | Monster, player2: Hero | Monster) {
+import * as e from "./Entity";
+
+export class Battle<T extends e.Entity, U extends e.Entity> {
+  player1: T;
+  player2: U;
+  constructor(player1: T, player2: U) {
     this.player1 = player1;
     this.player2 = player2;
   }
+
   fight() {
     while (this.player1.health * this.player2.health > 0) {
       let thePlayerThatAttacks = Math.floor(Math.random() * 2 + 1);
@@ -20,4 +23,5 @@ export class Battle {
     return this.player2;
   }
 }
+
 export { Hero, Monster };
