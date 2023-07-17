@@ -2,6 +2,7 @@ import { Entity } from "../interfaces/entity";
 import { EntityType } from "../enums/entity-type";
 export class Hero implements Entity {
   type: EntityType;
+
   constructor(
     public name: string,
     public health: number,
