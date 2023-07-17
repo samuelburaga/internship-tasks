@@ -16,8 +16,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Monster = void 0;
-var hero_1 = require("../classes/hero");
 var entity_type_1 = require("../enums/entity-type");
+var player_1 = require("../classes/player");
 var Monster = /** @class */ (function (_super) {
     __extends(Monster, _super);
     function Monster(name, health, strength) {
@@ -29,5 +29,5 @@ var Monster = /** @class */ (function (_super) {
         return _this;
     }
     return Monster;
-}(hero_1.Hero));
+}(player_1.Player));
 exports.Monster = Monster;

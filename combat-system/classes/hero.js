@@ -1,23 +1,33 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Hero = void 0;
 var entity_type_1 = require("../enums/entity-type");
-var Hero = /** @class */ (function () {
+var player_1 = require("../classes/player");
+var Hero = /** @class */ (function (_super) {
+    __extends(Hero, _super);
     function Hero(name, health, strength) {
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.type = entity_type_1.EntityType.HERO;
+        var _this = _super.call(this, name, health, strength) || this;
+        _this.name = name;
+        _this.health = health;
+        _this.strength = strength;
+        _this.type = entity_type_1.EntityType.HERO;
+        return _this;
     }
-    Hero.prototype.attack = function (target) {
-        target.takeDamage(this.strength * 2);
-    };
-    Hero.prototype.takeDamage = function (amount) {
-        this.health = this.health - amount;
-    };
     return Hero;
-}());
+}(player_1.Player));
 exports.Hero = Hero;
