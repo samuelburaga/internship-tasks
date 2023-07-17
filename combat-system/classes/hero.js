@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Hero = void 0;
-var e = require("../interfaces/entity");
+var entity_type_1 = require("../enums/entity-type");
 var Hero = /** @class */ (function () {
     function Hero(name, health, strength) {
         this.name = name;
@@ -10,7 +10,7 @@ var Hero = /** @class */ (function () {
         this.name = name;
         this.health = health;
         this.strength = strength;
-        this.type = e.EntityType.HERO;
+        this.type = entity_type_1.EntityType.HERO;
     }
     Hero.prototype.attack = function (target) {
         target.takeDamage(this.strength * 2);

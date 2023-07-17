@@ -1,8 +1,7 @@
-import * as e from "../interfaces/entity";
-
-export class Hero implements e.Entity {
-  type: e.EntityType.HERO;
-
+import { Entity } from "../interfaces/entity";
+import { EntityType } from "../enums/entity-type";
+export class Hero implements Entity {
+  type: EntityType;
   constructor(
     public name: string,
     public health: number,
@@ -11,10 +10,10 @@ export class Hero implements e.Entity {
     this.name = name;
     this.health = health;
     this.strength = strength;
-    this.type = e.EntityType.HERO;
+    this.type = EntityType.HERO;
   }
 
-  attack(target: e.Entity): void {
+  attack(target: Entity): void {
     target.takeDamage(this.strength * 2);
   }
 

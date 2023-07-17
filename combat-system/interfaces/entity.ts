@@ -1,5 +1,4 @@
 import { EntityType } from "../enums/entity-type";
-export { EntityType };
 
 export interface Entity {
   name: string;

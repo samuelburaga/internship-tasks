@@ -1,24 +1,11 @@
-import * as e from "../interfaces/entity";
+import { Hero } from "../classes/hero";
+import { Entity } from "../interfaces/entity";
+import { EntityType } from "../enums/entity-type";
 
-export class Monster implements e.Entity {
-  type: e.EntityType;
-
-  constructor(
-    public name: string,
-    public health: number,
-    public strength: number
-  ) {
-    this.name = name;
-    this.health = health;
-    this.strength = strength;
-    this.type = e.EntityType.MONSTER;
-  }
-
-  attack(target: e.Entity): void {
-    target.takeDamage(this.strength * 2);
-  }
-
-  takeDamage(amount: number): void {
-    this.health = this.health - amount;
+export class Monster extends Hero implements Entity {
+  type: EntityType;
+  constructor(public name, public health, public strength) {
+    super(name, health, strength);
+    this.type = EntityType.MONSTER;
   }
 }
