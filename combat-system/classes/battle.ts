@@ -3,11 +3,11 @@ import { Monster } from "./monster";
 import * as e from "../interfaces/entity";
 export { Hero, Monster };
 
-export class Battle<T extends e.Entity, U extends e.Entity> {
+export class Battle<T extends e.Entity> {
   player1: T;
-  player2: U;
+  player2: T;
 
-  constructor(player1: T, player2: U) {
+  constructor(player1: T, player2: T) {
     this.player1 = player1;
     this.player2 = player2;
   }

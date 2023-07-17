@@ -1,16 +1,17 @@
 import * as e from "../interfaces/entity";
 
 export class Hero implements e.Entity {
+  type: e.EntityType.HERO;
+
   constructor(
     public name: string,
     public health: number,
-    public strength: number,
-    public type: e.EntityType.HERO
+    public strength: number
   ) {
     this.name = name;
     this.health = health;
     this.strength = strength;
-    this.type = type;
+    this.type = e.EntityType.HERO;
   }
 
   attack(target: e.Entity): void {
