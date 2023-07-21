@@ -22,9 +22,6 @@ var Hero = /** @class */ (function (_super) {
     __extends(Hero, _super);
     function Hero(name, health, strength) {
         var _this = _super.call(this, name, health, strength) || this;
-        _this.name = name;
-        _this.health = health;
-        _this.strength = strength;
         _this.type = entity_type_1.EntityType.HERO;
         return _this;
     }

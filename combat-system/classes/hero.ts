@@ -2,11 +2,7 @@ import { EntityType } from "../enums/entity-type";
 import { Player } from "../classes/player";
 
 export class Hero extends Player {
-  constructor(
-    public name: string,
-    public health: number,
-    public strength: number
-  ) {
+  constructor(name: string, health: number, strength: number) {
     super(name, health, strength);
     this.type = EntityType.HERO;
   }

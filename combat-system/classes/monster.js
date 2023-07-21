@@ -22,9 +22,6 @@ var Monster = /** @class */ (function (_super) {
     __extends(Monster, _super);
     function Monster(name, health, strength) {
         var _this = _super.call(this, name, health, strength) || this;
-        _this.name = name;
-        _this.health = health;
-        _this.strength = strength;
         _this.type = entity_type_1.EntityType.MONSTER;
         return _this;
     }
