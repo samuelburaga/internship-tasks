@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var hero_1 = require("./classes/hero");
+var monster_1 = require("./classes/monster");
+var battle_1 = require("./classes/battle");
+var hero = new hero_1.Hero("Superman", 180, 10);
+var monster = new monster_1.Monster("Thanos", 200, 15);
+var battle = new battle_1.Battle(hero, monster);
+var winner = battle.fight();
+console.log("\t" + winner.name + " won!");

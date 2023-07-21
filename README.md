@@ -13,6 +13,22 @@ This repository is used to solve the tasks assigned to me during the internship 
 <details>
   <summary>Example</summary>
 
-<video src="disk-size/test.mp4" controls title="Title"></video>
+<video src="disk-size/test.mp4" controls title="disk-size"></video>
+
+</details>
+
+> ## Task 2
+
+<details>
+  <summary>Combat System</summary>
+
+![combat-system](combat-system/res/combat-system.png)
+
+</details>
+
+<details>
+  <summary>Example</summary>
+
+<video src="combat-system/res/test.mp4" controls title="Combat System"></video>
 
 </details>
