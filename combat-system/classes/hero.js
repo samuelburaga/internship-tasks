@@ -21,9 +21,7 @@ var player_1 = require("../classes/player");
 var Hero = /** @class */ (function (_super) {
     __extends(Hero, _super);
     function Hero(name, health, strength) {
-        var _this = _super.call(this, name, health, strength) || this;
-        _this.type = entity_type_1.EntityType.HERO;
-        return _this;
+        return _super.call(this, name, health, strength, entity_type_1.EntityType.HERO) || this;
     }
     return Hero;
 }(player_1.Player));

@@ -5,7 +5,6 @@ import { Player } from "../classes/player";
 export class Monster extends Player {
   type: EntityType;
   constructor(name: string, health: number, strength: number) {
-    super(name, health, strength);
-    this.type = EntityType.MONSTER;
+    super(name, health, strength, EntityType.MONSTER);
   }
 }

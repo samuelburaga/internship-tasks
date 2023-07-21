@@ -2,16 +2,16 @@ import { Entity } from "../interfaces/entity";
 import { EntityType } from "../enums/entity-type";
 
 export abstract class Player implements Entity {
-  type: EntityType;
-
   constructor(
     public name: string,
     public health: number,
-    public strength: number
+    public strength: number,
+    public type: EntityType
   ) {
     this.name = name;
     this.health = health;
     this.strength = strength;
+    this.type = type;
   }
 
   attack(target: Entity): void {

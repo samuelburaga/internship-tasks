@@ -3,7 +3,6 @@ import { Player } from "../classes/player";
 
 export class Hero extends Player {
   constructor(name: string, health: number, strength: number) {
-    super(name, health, strength);
-    this.type = EntityType.HERO;
+    super(name, health, strength, EntityType.HERO);
   }
 }
